@@ -9,4 +9,4 @@ app.secret_key = 'any random string'
 
 @app.route("/", methods=['GET'])
 def twt_user_tweets():
-    return "Version 1.0"
+    return "Version 1.0.1"
