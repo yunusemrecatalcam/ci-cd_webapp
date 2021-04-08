@@ -13,7 +13,7 @@ node{
     stage ('Deploy') {
 
         sshagent(credentials : ['k8s']) {
-            sh 'ssh ls'
+            sh 'ls'
         }
 }
 }
