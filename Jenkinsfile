@@ -13,7 +13,7 @@ node{
     stage ('Deploy') {
 
         sshagent(credentials : ['k8s']) {
-            sh 'ls'
+            sh 'kubectl rollout restart deployment/webapp-deployment'
         }
 }
 }
