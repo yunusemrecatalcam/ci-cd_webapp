@@ -13,7 +13,7 @@ node{
     stage ('Deploy') {
 
         sshagent(credentials : ['k8s']) {
-            sh 'kubectl rollout restart deployment/webapp-deployment'
+            sh 'ssh root@95.217.210.139 kubectl rollout restart deployment/webapp-deployment'
         }
 }
 }
