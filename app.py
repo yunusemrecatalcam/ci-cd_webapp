@@ -9,4 +9,4 @@ app.secret_key = 'any random string'
 
 @app.route("/", methods=['GET'])
 def main():
-    return "Version 1.0.8"
+    return "Version 1.0.9"
