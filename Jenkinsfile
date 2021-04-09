@@ -10,10 +10,10 @@ node{
 
     }
 
-    stage ('Deploy') {
+    /*stage ('Deploy') {
 
         sshagent(credentials : ['k8s']) {
             sh 'ssh root@95.217.210.139 -o StrictHostKeyChecking=no kubectl rollout restart deployment/webapp-deployment'
         }
-}
+}*/
 }
